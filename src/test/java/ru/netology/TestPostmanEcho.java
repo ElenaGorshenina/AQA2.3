@@ -25,7 +25,7 @@ public class TestPostmanEcho {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("data"))
+                .body("data", equalTo("some data"))
                 .contentType(ContentType.JSON)
                 .headers("Connection", "keep-alive")
         ;
