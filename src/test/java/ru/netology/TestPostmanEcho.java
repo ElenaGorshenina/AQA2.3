@@ -27,7 +27,6 @@ public class TestPostmanEcho {
                 .statusCode(200)
                 .body("data", equalTo("some data"))
                 .contentType(ContentType.JSON)
-                .headers("Content-Length", "424")
                 .headers("Connection", "keep-alive")
         ;
     }
